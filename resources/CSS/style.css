@@ -1,0 +1,251 @@
+html {
+  font-size: 18px;
+  font-family: Helvetica;
+}
+
+ body {
+   width: 100%;
+ }
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+
+/* Header */
+
+.header {
+  background-color: black;
+}
+
+.header .container {
+  background-color: black;
+  display: flex;
+  align-items: center;
+
+}
+
+.header .container img {
+  height: 1.5rem;
+  margin-right: 1rem;
+  margin-left: .5rem;
+}
+
+.header .container span {
+  padding: .66rem 0;
+
+}
+
+.header .container span {
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: white;
+}
+ /* Banner */
+
+.ban {
+  background-image: url(../images/banner.jpeg);
+  background-size: cover;
+  background-position: center;
+  height: 25rem;
+  text-transform: uppercase;
+  color: white;
+}
+
+
+.space {
+  background-color: black;
+  width: 20em;
+  padding: 2em 3em;
+  position: relative;
+  top: 9rem;
+}
+
+.space h4 {
+  font-size: 1em;
+  margin-bottom: .25em;
+  padding: 1em 0;
+}
+
+.space h1 {
+  font-size: 2em;
+  line-height: 1.2em;
+  margin: 0.25em 0;
+}
+
+/* Navigation */
+
+nav {
+  background-color: firebrick;
+  color: white;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+    padding: 0.75rem 0;
+}
+
+
+.menu {
+  display: none;
+}
+
+/* Main Three sections */
+
+.main {
+  margin-top: 3rem;
+}
+
+.part {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  border: 4px solid black;
+  width: 30%;
+}
+
+.spot img {
+  max-width: 8rem;
+}
+
+.spot {
+  padding: 2em 0;
+  height: 9em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product span {
+  padding: 0.5rem 0;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+/* Location and hours */
+
+.pieces .container{
+  display: flex;
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+  justify-content: space-between;
+}
+
+.loc {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+}
+
+.loc span {
+  background-color: black;
+  color: white;
+  padding: 1rem 0 1rem 2rem;
+}
+
+
+
+/* Footer */
+
+footer {
+  padding: 5em 0;
+  color: white;
+  background-color: black;
+  text-align: left;
+}
+
+footer p {
+  margin:0;
+}
+
+/* Media Query for 1024px */
+
+@media only screen and (max-width: 1024px) {
+
+  html {
+    font-size: 16px;
+  }
+
+  .product {
+    width: 47%;
+  }
+
+  .container {
+    margin: 0;
+    max-width: 100%;
+  }
+
+  .glasses {
+    display: none;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  .menu {
+    display: block;
+    text-align: center;
+    }
+
+    .loc {
+      width: 35%;
+    }
+}
+
+@media only screen and (max-width: 470px) {
+
+  .ban {
+    height: 15rem;
+  }
+
+  .space {
+    top: 8rem;
+    width: 100%;
+    padding: 1rem 2rem;
+  }
+
+  .space h4 {
+    font-size: 0.77rem;
+  }
+
+  .space h1 {
+    font-size: 1rem;
+  }
+
+  .container {
+    margin-left: ;
+  }
+  .watch {
+    display: none;
+  }
+
+  .pen {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .pieces .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  .loc {
+    width: 90%;
+    margin: 0.5rem auto;
+
+  }
+
+  footer {
+    text-align: center;
+  }
+}
